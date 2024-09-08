@@ -4,13 +4,13 @@ My personal go-to stack for frontend web development 🫡
 
 ## Key Components
 
-- [Rsbuild](https://rsbuild.dev/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Biome](https://biomejs.dev/)
-- [TanStack Router](https://tanstack.com/router/latest)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
+- [Rsbuild](https://rsbuild.dev/) - Rust-powered build tool for enhanced performance
+- [React](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [Biome](https://biomejs.dev/) - Fast, modern linter and formatter
+- [TanStack Router](https://tanstack.com/router/latest) - Type-safe, file-based routing
+- [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
+- [Tailwind CSS](https://tailwindcss.com/) and [shadcn/ui](https://ui.shadcn.com/) - UI styling
 
 ## Getting Started
 
