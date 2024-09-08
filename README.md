@@ -8,6 +8,7 @@ My personal go-to stack for frontend web development 🫡
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Biome](https://biomejs.dev/)
+- [TanStack Router](https://tanstack.com/router/latest)
 
 ## Package Manager
 
