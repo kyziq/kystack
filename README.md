@@ -38,6 +38,11 @@ npm install -g pnpm
    ```bash
    pnpm install
    ```
+3. Initialize Lefthook:
+
+   ```bash
+   pnpm lefthook install
+   ```
 
 ### Available Scripts
 
