@@ -4,17 +4,13 @@ My personal go-to stack for frontend web development 🫡
 
 ## Key Components
 
-- [Rspack](https://www.rspack.dev/)
+- [Rsbuild](https://rsbuild.dev/)
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Biome](https://biomejs.dev/)
 - [TanStack Router](https://tanstack.com/router/latest)
-
-## Package Manager
-
-Currently using [pnpm](https://pnpm.io/). Will switch to [Bun](https://bun.sh/) when officially supported.
-
-> **Note:** Tracking Bun support via [GitHub Issue #11628](https://github.com/oven-sh/bun/issues/11628)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
 ## Getting Started
 
@@ -51,3 +47,15 @@ npm install -g pnpm
 - `pnpm format`: Formats the code using Biome
 - `pnpm lint`: Lints the code using Biome
 - `pnpm check`: Checks the code using Biome
+
+## Package Manager
+
+Currently using [pnpm](https://pnpm.io/). Will switch to [Bun](https://bun.sh/) when officially supported.
+
+> **Note:** Tracking Bun support for Rsbuild via [GitHub Issue #11628](https://github.com/oven-sh/bun/issues/11628)
+
+## Installing shadcn/ui
+
+shadcn/ui CLI doesn't support Rspack yet. Therefore, need to manually install shadcn/ui and the components.
+
+> **Note:** Tracking for Rsbuild support via [GitHub Issue #4756](https://github.com/shadcn-ui/ui/issues/4756)
