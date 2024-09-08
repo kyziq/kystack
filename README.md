@@ -12,6 +12,11 @@ My personal go-to stack for frontend web development 🫡
 - [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
 - [Tailwind CSS](https://tailwindcss.com/) and [shadcn/ui](https://ui.shadcn.com/) - UI styling
 
+### Supporting Tools
+
+* [react-helmet-async](https://github.com/staylor/react-helmet-async) - Document head manager for React
+* [lefthook](https://github.com/evilmartians/lefthook) - Git hooks manager
+
 ## Getting Started
 
 ### Prerequisites
