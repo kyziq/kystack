@@ -1,3 +1,5 @@
+import { ModeToggle } from '@/components/mode-toggle';
+import { ThemeProvider } from '@/components/theme-provider';
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 
@@ -7,29 +9,25 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <>
-      <div className="p-2 flex gap-2 text-lg">
-        <Link
-          to="/"
-          activeProps={{
-            className: 'font-bold',
-          }}
-          activeOptions={{ exact: true }}
-        >
-          Home
-        </Link>{' '}
-        <Link
-          to={'/about'}
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          About
-        </Link>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <header className="p-2 flex justify-between items-center">
+          <nav className="flex gap-2">
+            <Link to="/" className="[&.active]:font-bold">
+              Home
+            </Link>{' '}
+            <Link to="/about" className="[&.active]:font-bold">
+              About
+            </Link>
+          </nav>
+          <ModeToggle />
+        </header>
+        <hr />
+        <main className="container mx-auto p-4">
+          <Outlet />
+        </main>
+        <TanStackRouterDevtools />
       </div>
-      <hr />
-      <Outlet />
-      <TanStackRouterDevtools position="bottom-right" />
-    </>
+    </ThemeProvider>
   );
 }

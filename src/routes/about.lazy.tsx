@@ -6,7 +6,7 @@ export const Route = createLazyFileRoute('/about')({
 
 function AboutComponent() {
   return (
-    <div className="p-2">
+    <div>
       <h3>This is /about</h3>
     </div>
   );
