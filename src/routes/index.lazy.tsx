@@ -12,7 +12,7 @@ function Index() {
   const increaseCats = useCatStore((state) => state.increaseCats);
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-[calc(100vh-89px)] ">
       <SEO
         title="Welcome to Kystack"
         description="Kyziq's go-to stack for frontend web development, Kystack!"
