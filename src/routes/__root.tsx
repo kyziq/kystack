@@ -1,7 +1,6 @@
 import { ModeToggle } from '@/components/mode-toggle';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import { HelmetProvider } from 'react-helmet-async';
 
 export const Route = createRootRoute({
@@ -28,7 +27,6 @@ function RootComponent() {
           <main className="container mx-auto p-4">
             <Outlet />
           </main>
-          <TanStackRouterDevtools />
         </div>
       </ThemeProvider>
     </HelmetProvider>
