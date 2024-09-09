@@ -9,4 +9,7 @@ export default defineConfig({
       plugins: [TanStackRouterRspack()],
     },
   },
+  output: {
+    assetPrefix: '/', // If deploy to a subdirectory, set this to the subdirectory
+  },
 });

@@ -4,6 +4,7 @@ import { routeTree } from './routeTree.gen';
 // Set up a Router instance
 const router = createRouter({
   routeTree,
+  basepath: '/', // If deploy to a subdirectory, set this to the subdirectory
   defaultPreload: 'intent',
 });
 
