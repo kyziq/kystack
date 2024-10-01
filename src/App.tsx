@@ -1,43 +1,30 @@
-import NotFound from '@/components/not-found';
-import { routeTree } from '@/routeTree.gen';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
-import React from 'react';
-
-const TanStackRouterDevtools =
-  process.env.NODE_ENV === 'development'
-    ? React.lazy(() =>
-        import('@tanstack/router-devtools').then((res) => ({
-          default: res.TanStackRouterDevtools,
-        })),
-      )
-    : () => null;
+import NotFound from "@/components/not-found";
+import { routeTree } from "@/routeTree.gen";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
 
 // Set up a Router instance
 const router = createRouter({
-  routeTree,
-  basepath: '/', // If deploy to a subdirectory, set this to the subdirectory
-  defaultPreload: 'intent',
-  defaultNotFoundComponent: () => {
-    return <NotFound />;
-  },
+	routeTree,
+	basepath: "/", // If deploy to a subdirectory, set this to the subdirectory
+	defaultPreload: "intent",
+	defaultNotFoundComponent: () => {
+		return <NotFound />;
+	},
 });
 
 // Register things for typesafety
-declare module '@tanstack/react-router' {
-  interface Register {
-    router: typeof router;
-  }
+declare module "@tanstack/react-router" {
+	interface Register {
+		router: typeof router;
+	}
 }
 
 const App = () => {
-  return (
-    <>
-      <RouterProvider router={router} />
-      <React.Suspense fallback={null}>
-        <TanStackRouterDevtools router={router} />
-      </React.Suspense>
-    </>
-  );
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 };
 
 export default App;
