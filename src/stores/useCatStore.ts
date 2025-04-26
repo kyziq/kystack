@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
 interface CatStore {
-	cats: number;
-	increaseCats: (amount: number) => void;
+	cat: number;
+	increaseCat: (amount: number) => void;
 }
 
 export const useCatStore = create<CatStore>((set) => ({
-	cats: 0,
-	increaseCats: (amount) => set((state) => ({ cats: state.cats + amount })),
+	cat: 0,
+	increaseCat: (amount) => set((state) => ({ cat: state.cat + amount })),
 }));

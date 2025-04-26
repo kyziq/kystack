@@ -8,8 +8,8 @@ export const Route = createLazyFileRoute("/")({
 });
 
 function Index() {
-	const cats = useCatStore((state) => state.cats);
-	const increaseCats = useCatStore((state) => state.increaseCats);
+	const cat = useCatStore((state) => state.cat);
+	const increaseCat = useCatStore((state) => state.increaseCat);
 
 	return (
 		<div className="flex items-center justify-center min-h-[calc(100vh-89px)] ">
@@ -19,8 +19,8 @@ function Index() {
 			/>
 			<div className="text-center p-8">
 				<h1 className="text-3xl font-bold mb-6">Welcome to Kystack</h1>
-				<p className="text-xl mb-4">Number of cats: {cats}</p>
-				<Button onClick={() => increaseCats(1)} className="text-lg">
+				<p className="text-xl mb-4">Number of cats: {cat}</p>
+				<Button onClick={() => increaseCat(1)} className="text-lg">
 					Add a 😺
 				</Button>
 			</div>
