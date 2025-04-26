@@ -4,18 +4,17 @@ My personal go-to stack for frontend web development 🫡
 
 ## Key Components
 
-- [Vite](https://vitejs.dev/) - Frontend build tool
-- [React](https://reactjs.org/) - UI library
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
-- [Biome](https://biomejs.dev/) - Fast, modern linter and formatter
-- [TanStack Router](https://tanstack.com/router/latest) - Type-safe, file-based routing
-- [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
-- [Tailwind CSS](https://tailwindcss.com/) and [shadcn/ui](https://ui.shadcn.com/) - UI styling
+- Vite + React19 + TypeScript
+- BiomeJS as linter and formatter
+- TanStack Router for type-safe, file-based routing
+- Zustand for client-side state management
+- TailwindCSS and shadcn/ui for user interface
+- React Compiler
 
 ### Supporting Tools
 
-* [react-helmet-async](https://github.com/staylor/react-helmet-async) - Document head manager for React
-* [lefthook](https://github.com/evilmartians/lefthook) - Git hooks manager
+- react-helmet-async for document head manager
+- lefthook for Git hooks manager
 
 ## Getting Started
 
@@ -29,7 +28,7 @@ If you don't have Bun installed, you can install it by following the instruction
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Kyziq/kystack
+   git clone https://github.com/kyziq/kystack
    cd kystack
    ```
 2. Install dependencies:
@@ -42,10 +41,4 @@ If you don't have Bun installed, you can install it by following the instruction
 - `bun dev`: Starts the development server with hot-reloading
 - `bun build`: Builds the project for production
 - `bun preview`: Serves the production build locally
-- `bun format`: Formats the code using Biome
-- `bun lint`: Lints the code using Biome
 - `bun check`: Checks the code using Biome
-
-### Future Improvements
-
-Explore [TanStack Start](https://tanstack.com/start/latest) and [React Compiler](https://react.dev/learn/react-compiler)
