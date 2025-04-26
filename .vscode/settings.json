@@ -5,7 +5,10 @@
 		"source.organizeImports": "explicit",
 		"source.fixAll": "explicit"
 	},
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
 	"files.associations": {
-   "*.css": "tailwindcss"
-},
+		"*.css": "tailwindcss"
+	}
 }
